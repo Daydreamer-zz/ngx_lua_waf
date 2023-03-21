@@ -1,6 +1,6 @@
 RulePath = "/usr/local/openresty/nginx/conf/waf/wafconf/"
 attacklog = "on"
-logdir = "/usr/local/openresty/nginx/logs/hack/"
+logdir = "/usr/local/openresty/nginx/logs/"
 UrlDeny="on"
 Redirect="on"
 CookieMatch="on"
@@ -9,7 +9,7 @@ whiteModule="on"
 black_fileExt={"php","jsp"}
 ipWhitelist={"127.0.0.1"}
 ipBlocklist={"1.0.0.1"}
-CCDeny="off"
+CCDeny="on"
 CCrate="100/60"
 html=[[
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
